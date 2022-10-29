@@ -47,7 +47,7 @@ Users should be able to:
 
 ### What I learned
 
-How to overlay an image in hover
+How to overlay a visible image in hover while the one below must be in transparency
 
 ```html
 <h1>Some HTML code I'm proud of</h1>
@@ -109,7 +109,7 @@ How to overlay an image in hover
 
 ### Useful resources
 
-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_opacity - This helped me overlay an image in hover. I really liked this pattern and will use it going forward.
+- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_opacity - This helped me overlay the visible image in hover. I really liked this pattern and will use it going forward.
 
 
 ## Author
