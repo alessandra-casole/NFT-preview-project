@@ -14,9 +14,7 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -32,11 +30,10 @@ Users should be able to:
 ![](./screenshot.png)
 
 
-
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://github.com/alessandra-casole/NFT-preview-project
+- Live Site URL: https://alessandra-casole.github.io/NFT-preview-project/
 
 ## My process
 
@@ -47,44 +44,73 @@ Users should be able to:
 - Flexbox
 - Mobile-first workflow
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
+How to overlay an image in hover
 
 ```html
 <h1>Some HTML code I'm proud of</h1>
+
+  <div id="card">
+    <img src="assets/img/image-equilibrium.jpg" id="card-image" alt="a illuminated cube" />
+       <div id="overlay">
+         <div id="view-icon">
+          <img src="assets/img/icon-view.svg" alt="eye icon" id="h-icon-image"/>
+         </div>
+       </div>
+   </div>
 ```
 ```css
 .proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+  #card {
+    position: relative;
+    background-color: hsl(178, 100%, 50%);
+    border-radius: 10px;
+}
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+  #card-image {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+    opacity: 1;
+    transition: .5s ease;
+}
+
+  #overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* width: 100%; */
+    opacity: 0;
+    border: 1px solid transparent;
+    border-radius: 9px;
+    transition: .5s ease;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+  #card:hover #card-image {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+  #card:hover #overlay {
+    opacity: 1;
+}
+
+```
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_opacity - This helped me overlay an image in hover. I really liked this pattern and will use it going forward.
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
 
