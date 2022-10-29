@@ -1,0 +1,209 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    
+   
+}
+
+/* Main */
+
+main {
+    background-color: hsl(217, 54%, 11%);
+    padding: 65px 20px 12px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card section */
+
+#card-section {
+    background-color: hsl(216, 50%, 16%);
+    padding: 23px;
+    /* border: 1px solid transparent; */
+    border-radius: 15px;
+    box-shadow: -4px 20px 50px hsl(217deg 57% 6%);
+    max-width: 300px;
+    /* width: 100%  cambiando il padding del main*/
+}
+
+
+/* Hover image */
+
+#card {
+    position: relative;
+    background-color: hsl(178, 100%, 50%);
+    border-radius: 10px;
+}
+
+#card-image {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+    opacity: 1;
+    transition: .5s ease;
+}
+
+#overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* width: 100%; */
+    opacity: 0;
+    border: 1px solid transparent;
+    border-radius: 9px;
+    transition: .5s ease;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+#card:hover #card-image {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#card:hover #overlay {
+    opacity: 1;
+}
+
+/*  */
+
+.colored-text:hover {
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+    transition: 0.8s;
+}
+
+
+#card-title {
+    font-size: 21.2px;
+    padding-top: 10px;
+    letter-spacing: 0.5px;
+}
+
+
+#card-text {
+    line-height: 1.6;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+
+.colored-text {
+    color: hsl(0, 0%, 100%);
+}
+
+/* Icons  */
+
+#icons-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+    font-size: 15.4px;
+}
+
+#colored-icons-text {
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+}
+
+/* Alignment icons  */
+
+.icons-tx {
+    display: flex;
+    font-weight: 400;
+    margin-bottom: 0.8em;
+}
+
+#colored-icons-text::before {
+    content:url(../img/icon-ethereum.svg);
+    margin-right: 6px;
+}
+
+#g-text::before {
+    content:url(../img/icon-clock.svg);
+    margin-right: 6px;
+}
+
+
+/* Card footer  */
+
+#card-footer {
+    display: flex;
+    margin-top: 9px;
+    align-items: center;
+    font-size: 15.6px;
+    font-weight: 400;
+    margin-bottom: -10px;
+}
+
+#avatar-image {
+    width: 11%;
+    /* height: 12%; */
+    border: 1px solid hsl(0, 0%, 100%) ;
+    border-radius: 100%;
+    margin-right: 15px;
+}
+
+/* Credits */
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 3.3em;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 400px) {
+    body {
+        font-size: 18px;
+    }
+
+    /* main {
+        padding-right: 40px;
+        padding-left: 40px;
+    } */
+
+    #card-section {
+        /* width: 100%; */
+        letter-spacing: 0.2px;
+    }
+
+    #card-title {
+        font-size: 21.8px;
+    }
+
+    #card-text {
+        line-height: 1.5;
+    }
+
+
+    .icons-tx {
+        margin: 19px 0;
+    }
+
+    #card-footer {
+        margin-bottom: -3px;
+    }
+
+    #avatar-image {
+        width: 10.4%;
+    }
+}
+
