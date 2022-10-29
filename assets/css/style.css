@@ -10,8 +10,8 @@ body {
     font-size: 16px;
     color: hsl(215, 51%, 70%);
     font-weight: 300;
-    
-   
+    height: 100%;
+    min-height: 100vh;   
 }
 
 /* Main */
