@@ -43,6 +43,7 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - Mobile-first workflow
+- Media Queries
 
 
 ### What I learned
@@ -100,6 +101,8 @@ How to overlay a visible image in hover while the one below must be in transpare
 
   #card:hover #overlay {
     opacity: 1;
+}
+
 }
 
 ```
