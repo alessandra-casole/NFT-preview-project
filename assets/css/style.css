@@ -11,19 +11,24 @@ body {
     color: hsl(215, 51%, 70%);
     font-weight: 300;
     background-color: hsl(217, 54%, 11%);
-    min-height: 100vh; 
+    min-height: 100vh;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Main */
 
-main {
+/*main {
     
     padding: 65px 20px 12px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+}*/
 
 main a {
     text-decoration: none;
@@ -164,8 +169,8 @@ main a {
 .attribution {
     font-size: 11px;
     text-align: center;
-    margin-top: 3.3em;
-    margin-bottom: 1em;
+    /*margin-top: 3.3em;
+    margin-bottom: 1em;*/
 }
 
 .attribution a {
